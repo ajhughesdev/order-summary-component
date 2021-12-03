@@ -1,0 +1,99 @@
+@import 'reset.scss';
+@import 'typography.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'layout.scss';
+
+body {
+  background: $pale-color url('../../dist/img/pattern-background-mobile.svg') center top / 100% no-repeat;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $white-color;
+  border-radius: 1.25rem;
+  width: 20.4375rem;
+  height: 35.4375rem;
+  margin: 4.4375rem auto;
+  box-shadow: 0 2.5rem 2.5rem -1.25rem hsla(228, 87%, 40%, 0.152);
+
+  .illustration {
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
+}
+
+h1 {
+  @include fonts(1.375rem, 900, 29.11px);
+  text-align: center;
+  color: $dark-color;
+  padding: 2rem 2rem 0;
+}
+
+.sub {
+  @include fonts(.9375rem, 500, 25px);
+  text-align: center;
+  color: $desaturated-color;
+  padding: 1rem 2rem 0;
+}
+
+.plan-selection-card {
+  margin: 1.5rem auto;
+  padding: 1.0625rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  background-color: $very-pale-color;
+  border-radius: .6875rem;
+}
+
+p:first-child {
+  @include fonts(.875rem, 900, 18.52px);
+  text-align: left;
+  color: $dark-color;
+  padding: 0 0 .1875rem;
+}
+
+p:last-child {
+  @include fonts(.875rem, 500, 18.52px);
+  text-align: left;
+  color: $desaturated-color;
+}
+
+.plan-choice {
+  margin-left: 1.25rem;
+}
+
+.plan-selection-card a {
+  @include fonts(.8125rem, 700, 17.2px);
+  text-align: left;
+  color: $bright-color;
+  margin-left: 3.125rem;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 1.5px;
+}
+
+button {
+  background-color: $bright-color;
+  border-radius: .6875rem;
+  box-shadow: 0px 1.25rem 1.25rem hsla(245, 75%, 52%, 0.19);
+  margin: 0 auto 1.5rem;
+  @include fonts(.9375rem, 900, 19.85px);
+  text-align: left;
+  color: $white-color;
+  padding: .9375rem 4.0625rem .9375rem 4rem;
+}
+
+a.cancel {
+  @include fonts(.9375rem, 900, 19.85px);
+  text-align: left;
+  color: $desaturated-color;
+  margin: 0 auto 2rem;
+}
+
+// border: red 1px solid;
+.attribution {
+  @include attribution;
+}

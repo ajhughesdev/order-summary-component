@@ -1,0 +1,36 @@
+{
+  "name": "order-summary-component",
+  "version": "1.0.0",
+  "description": "a build out of the Order Summary Component card from https://www.frontendmentor.io",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.11",
+    "postcss": "^8.3.11",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-cli": "^9.0.2",
+    "postcss-import": "^14.0.2",
+    "postcss-map-get": "^0.3.0",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.0.0",
+    "postcss-scss": "^4.0.2",
+    "postcss-sort-media-queries": "^4.1.0"
+  },
+  "scripts": {
+    "css:watch": "postcss src/scss/main.scss --output dist/css/main.css --env development --verbose --watch",
+    "css:build": "postcss src/scss/main.scss --output dist/css/main.css --env production --verbose"
+  },
+  "browserslist": [
+    "> 2%, last 2 versions, not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajhughesdev/order-summary-component.git"
+  },
+  "keywords": [],
+  "author": "Andrew J Hughes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajhughesdev/order-summary-component/issues"
+  },
+  "homepage": "https://github.com/ajhughesdev/order-summary-component#readme"
+}

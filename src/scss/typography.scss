@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../font/RedHatDisplay-VariableFont_wght.woff2") format("woff2-variations");
+  font-style: normal;
+  font-weight: 300 900;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Red Hat Display", serif;
+  font-style: normal;
+}

@@ -1,0 +1,9 @@
+$breakpoint: ('mobile': 23.4375rem,
+  'desktop': 90rem);
+
+
+@mixin respond($bp) {
+  @media screen and (min-width: map-get($breakpoint, $bp)) {
+    @content;
+  }
+}
