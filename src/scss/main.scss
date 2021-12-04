@@ -7,6 +7,10 @@
 body {
   background: $pale-color url('../../dist/img/pattern-background-mobile.svg') center top / 100% no-repeat;
 
+  @include respond('desktop') {
+    background: $pale-color url('../../dist/img/pattern-background-desktop.svg') center top / 100% no-repeat;
+  }
+
 }
 
 .card {
@@ -20,6 +24,12 @@ body {
   margin: 4.4375rem auto;
   box-shadow: 0 2.5rem 2.5rem -1.25rem hsla(228, 87%, 40%, 0.152);
 
+  @include respond('desktop') {
+    width: 28.125rem;
+    height: 43.5625rem;
+    margin: 6.375rem auto;
+  }
+
   .illustration {
     border-radius: 1.25rem 1.25rem 0 0;
   }
@@ -30,6 +40,12 @@ h1 {
   text-align: center;
   color: $dark-color;
   padding: 2rem 2rem 0;
+
+  @include respond('desktop') {
+    font-size: 1.75rem;
+    line-height: 37.04px;
+    padding: 2.8125rem 3rem 0;
+  }
 }
 
 .sub {
@@ -37,6 +53,12 @@ h1 {
   text-align: center;
   color: $desaturated-color;
   padding: 1rem 2rem 0;
+
+  @include respond('desktop') {
+    font-size: 1rem;
+    line-height: 1.625;
+    padding: 1.0625rem 3rem 0;
+  }
 }
 
 .plan-selection-card {
@@ -46,6 +68,11 @@ h1 {
   align-items: center;
   background-color: $very-pale-color;
   border-radius: .6875rem;
+
+  @include respond('desktop') {
+    margin: 1.25rem auto 2rem;
+    padding: 1.5625rem 1.5rem;
+  }
 }
 
 p:first-child {
@@ -53,12 +80,23 @@ p:first-child {
   text-align: left;
   color: $dark-color;
   padding: 0 0 .1875rem;
+
+  @include respond('desktop') {
+    font-size: 1rem;
+    line-height: 21.17px;
+    padding: 0 0 .375rem;
+  }
 }
 
 p:last-child {
   @include fonts(.875rem, 500, 18.52px);
   text-align: left;
   color: $desaturated-color;
+
+  @include respond('desktop') {
+    font-size: 1rem;
+    line-height: 21.17px;
+  }
 }
 
 .plan-choice {
@@ -73,6 +111,17 @@ p:last-child {
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
   text-underline-offset: 1.5px;
+
+  @include respond('desktop') {
+    font-size: .875rem;
+    line-height: 18.52px;
+    margin-left: 5.875rem;
+  }
+
+  &:hover {
+    color: $active-color;
+  }
+
 }
 
 button {
@@ -84,6 +133,16 @@ button {
   text-align: left;
   color: $white-color;
   padding: .9375rem 4.0625rem .9375rem 4rem;
+  cursor: pointer;
+
+  @include respond('desktop') {
+    margin: 0 auto 2rem;
+    padding: .9375rem 6.375rem;
+  }
+
+  &:hover {
+    background-color: $active-color;
+  }
 }
 
 a.cancel {
@@ -91,6 +150,18 @@ a.cancel {
   text-align: left;
   color: $desaturated-color;
   margin: 0 auto 2rem;
+
+  @include respond('desktop') {
+    margin: 0 auto 3rem;
+  }
+
+  &:hover {
+    color: $dark-color;
+  }
+}
+
+a:any-link {
+  cursor: pointer;
 }
 
 // border: red 1px solid;
